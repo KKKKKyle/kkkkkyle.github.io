@@ -1,0 +1,193 @@
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 150px; /* Same as the width of the sidebar */
+    margin-right:-10px;
+    margin-top: 20px;
+    padding: 0px;
+    width:100% - 150px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+.footer{
+  margin-left:25px;
+  margin-top:30px;
+}
+
+.footer>h4{
+	font-family: 'Rammetto One', cursive;
+	color: black;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+
+.contact_info{
+	font-family: 'Mina', sans-serif;
+	color: black;
+}
+
+/* .contact-info div{
+	display: inline-block;
+} */
+
+.contact_info ul {
+	padding: 0 0 0 0;
+	margin: 0 0 0 15px;
+}
+.contact_info li {
+	display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 0 10px 0 10px;
+}
+.contact_info ul li p {
+    padding: 0 5px;
+}
+
+.contact_info a{
+	text-decoration: none;
+	color: black;
+}
+
+.contact_info a:hover{
+	text-decoration: none;
+	color:black;
+}
+
+.profile {
+    height: 400px;
+    margin-left:40px;
+}
+    
+
+.profile  .img-fluid {
+    display: block;
+    width: auto;
+    max-height: 100%;
+}
+
+.exp {
+    height: 600px;
+    margin-left:40px;
+}
+    
+
+.exp  .img-fluid {
+    display: block;
+    width: auto;
+    max-height: 100%;
+}
+
+.edu {
+    height: 120px;
+    margin-left:40px;
+}
+    
+
+.edu  .img-fluid {
+    display: block;
+    width: auto;
+    max-height: 100%;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.display-container {
+    margin: auto;
+    display: flex;
+  }
+  
+  .note-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 25px;
+  }
+  
+  .circle {
+    position: relative;
+  }
+  
+  .circle__svg {
+    transform: rotate(-90deg);
+  }
+  
+  .circle__progress {
+    fill: none;
+    stroke-width: 3;
+    stroke-opacity: 0.3;
+    stroke-linecap: round;
+  }
+  
+  .circle__progress--fill {
+    --initialStroke: 0;
+    --transitionDuration: 0;
+    stroke-opacity: 1;
+    stroke-dasharray: var(--initialStroke);
+    stroke-dashoffset: var(--initialStroke);
+    transition: stroke-dashoffset var(--transitionDuration) ease;
+  }
+  
+  .note-display:nth-child(1) .circle__progress { stroke: #ffc800; }
+  .note-display:nth-child(2) .circle__progress { stroke: #e72929; }
+  .note-display:nth-child(3) .circle__progress { stroke: #AA00FF; }
+  .note-display:nth-child(4) .circle__progress { stroke: #00AAFF; }
+  .note-display:nth-child(5) .circle__progress { stroke: #11ff00; }
+  .note-display:nth-child(6) .circle__progress { stroke: #059d3a; }
+  .note-display:nth-child(7) .circle__progress { stroke: #2939e7; }
+  
+  .percent {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+    transform: translate(-50%, -50%);
+  }
+  
+  .percent__int { font-size: 28px; }
+  .percent__dec { font-size: 12px; }
+  
+  .label {
+    font-family: 'Raleway', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 15px;
+  }
